@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel Decorative', cursive;
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid gold;
+}
+
+.logo {
+  font-size: 2rem;
+  color: gold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: gold;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: gold;
+  margin-bottom: 2rem;
+}
+
+.book-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.book-grid img {
+  height: 180px;
+  border: 2px solid gold;
+  box-shadow: 0 0 10px gold;
+  transition: transform 0.3s;
+}
+
+.book-grid img:hover {
+  transform: scale(1.05);
+}
+
+.cta p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #eee;
+}
+.book-card {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+.book-card:hover {
+  transform: perspective(1000px) rotateY(15deg) rotateX(5deg) scale(1.05);
+}
+
+.cta button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: gold;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 8px gold;
+}
+
+.cta button:hover {
+  background-color: #ffd700;
+}
